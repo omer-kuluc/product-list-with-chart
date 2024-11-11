@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Red Hat Text';
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+h1 {
+  margin-bottom: 32px;
+}
+
+.container {
+  background-color: #FCF8F6;
+}
+
+.inner-container {
+  margin-inline : auto;
+  max-width: 327px;
+}
+
+.dessert-card {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 24px;
+}
+
+.card-inner {
+  position: relative;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #AD8A85;
+  background-color: white;
+  border-radius: 999px;
+  padding: 12px 28px;
+  color: #260F08;
+  line-height: 18px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -18px;
+  left: 80px;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+
+.category-name {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.52px;
+  color : #87635A;
+}
+
+.dessert-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.17px;
+
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.17px;
+  color : #C73B0F;
+}
+
+.cart-area {
+  margin-top: 32px;
+  padding-inline: 24px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.cart-header {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.75px;
+  text-align: left;
+  color : #C73B0F;
+  margin-bottom: 40px;
+}
+
+.cart-img{
+  display: block;
+  margin-inline : auto;
+}
+
+.cart-text {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18.52px;
+  text-align: center;
+  color : #87635A;
+}
+
+
+
+.empty-cart {
+  display: block;
+}
+
+.empty-cart, .full-cart {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.empty-cart h3, .full-cart h3 {
+  font-weight: 700;
+  line-height: 31.75px;
+  font-size: 24px;
+  color: #C73B0F;
+  margin-bottom: 24px;
+}
+
+.empty-cart img {
+  margin-inline: auto;
+}
+
+.empty-cart p {
+  font-weight: 600;
+  line-height: 18.52px;
+  font-size: 14px;
+  color: #87635A;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.full-cart {
+  max-width: 384px;
+  min-height: 542px;
+}
+
+.full-cart h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18.52px;
+  margin-bottom: 8px;
+  color: #260F08;
+}
+
+.sub-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.quantity-span, .orjPrice, .lastPrice {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18.52px;
+  color: #C73B0F;
+}
+
+.orjPrice, .lastPrice {
+  font-weight: 400;
+  color: #87635A;
+}
+
+.lastPrice {
+  font-weight: 600;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.carbon-info-box {
+  display: flex;
+  gap: 8px;
+  border-radius: 8px;
+  background-color: #FCF8F6;
+  padding: 16px;
+  margin-inline: auto;
+  justify-content: center;
+  margin-block: 24px;
+}
+
+.carbon-info-box p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.52px;
+  color: #260F08;
+}
+
+.carbon-info-box span {
+  font-weight: 600;
+}
+
+.confirmBtn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 999px;
+  border-style: none;
+  background-color: #C73B0F;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 21.17px;
+  font-size: 16px;
+}
+
+
+.order-cart {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F5EEEC;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.orderTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  color: #260F08;
+}
+
+.orderTotal p {
+  font-weight: 400;
+  line-height: 18.52px;
+  font-size: 14px;
+}
+
+.totalOrderPrice {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.75px;
+}
+
+
+@media (width>=768px) {
+
+
+  .inner-container {
+    max-width: 688px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px 32px;
+  }
+
+  .add-btn {
+    left: 22px;
+  }
+}
+
+
+@media (width>=1280px) {
+
+  .container {
+    padding-block : 88px;
+    padding-inline : 112px;
+  }
+
+  .inner-container {
+    max-width: 1216px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 32px;
+  }
+
+  .food-section {
+    max-width: 775px;
+  }
+
+  .cart-area {
+    margin-top: 0;
+    max-width: 400px;
+    max-height: 300px;
+  }
+  
+  .add-btn {
+    left: 35px;
+  }
+
+}
